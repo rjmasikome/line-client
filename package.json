@@ -1,0 +1,46 @@
+{
+  "name": "line-client",
+  "description": "LINE (Messenger) client for Nodejs",
+  "version": "0.1.0",
+  "main": "build/index.js",
+  "repository": "",
+  "keywords": [
+    "line",
+    "messenger",
+    "client"
+  ],
+  "author": {
+    "name": "rjmasikome",
+    "email": "rjmasikome@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/rjmasikome/line-client/issues"
+  },
+  "homepage": "https://github.com/rjmasikome/line-client#readme",
+  "directories": {
+    "test": "test/"
+  },
+  "scripts": {
+    "start": "ts-node example/",
+    "build": "npm run compile",
+    "clean": "rm -rf build",
+    "precompile": "npm run clean",
+    "compile": "tsc --pretty",
+    "lint": "tslint lib/ test/",
+    "lint:fix": "tslint --fix lib/ test/",
+    "test": "mocha --exit --require ts-node/register 'test/**/*.ts'",
+    "dev": "nodemon index.ts"
+  },
+  "dependencies": {
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.7",
+    "ts-node": "^4.0.1",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  }
+}
