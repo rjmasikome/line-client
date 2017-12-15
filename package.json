@@ -33,6 +33,7 @@
     "dev": "nodemon index.ts"
   },
   "dependencies": {
+    "debug": "^3.1.0",
     "request": "^2.83.0"
   },
   "devDependencies": {
