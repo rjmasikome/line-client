@@ -1,7 +1,7 @@
 {
   "name": "line-client",
   "description": "LINE (Messenger) client for Nodejs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "build/Client.js",
   "repository": "",
   "keywords": [
